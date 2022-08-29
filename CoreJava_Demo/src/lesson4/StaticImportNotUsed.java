@@ -1,4 +1,4 @@
-package com.capgemini.lesson4;
+package lesson4;
 //Math class is in lang package, hence import not required
 public class StaticImportNotUsed {
 

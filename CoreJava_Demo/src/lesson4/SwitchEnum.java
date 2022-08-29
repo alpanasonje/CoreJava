@@ -1,4 +1,4 @@
-package com.capgemini.lesson4;
+package lesson4;
 
 public class SwitchEnum {
 	enum Choice { Choice1, Choice2, Choice3 }

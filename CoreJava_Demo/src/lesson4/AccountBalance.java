@@ -1,6 +1,6 @@
-package com.capgemini.lesson4;
+package lesson4;
 
-import com.capgemini.lesson4.demo.Balance;
+import lesson4.demo.Balance;
 
 class AccountBalance {
 	public static void main(String args[]) {

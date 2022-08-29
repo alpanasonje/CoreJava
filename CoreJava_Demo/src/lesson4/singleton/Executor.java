@@ -1,4 +1,4 @@
-package com.capgemini.lesson4.singleton;
+package lesson4.singleton;
 
 public class Executor {
 

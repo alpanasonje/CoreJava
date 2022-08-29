@@ -1,4 +1,4 @@
-package com.capgemini.lesson4;
+package lesson4;
 
 /*
  * static is illegal modifier for class.

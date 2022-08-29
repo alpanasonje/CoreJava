@@ -1,4 +1,4 @@
-package com.capgemini.lesson4;
+package lesson4;
 
 class Box {
 	

@@ -1,4 +1,4 @@
-package com.capgemini.lesson4;
+package lesson4;
 import static  java.lang.Math.*; //static import used here
 public class StaticImportDemo {
 

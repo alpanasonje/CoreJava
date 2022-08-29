@@ -1,5 +1,5 @@
 // file Balance.java
-package com.capgemini.lesson4.demo;
+package lesson4.demo;
 
 // if any import statement those can be placed here.
 
