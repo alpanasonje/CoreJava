@@ -19,4 +19,8 @@ public class MyClass {
 	{
 		return obj;
 	}
+	public static MyClass getMyClass()
+	{
+		return new MyClass();
+	}
 }

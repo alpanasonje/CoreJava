@@ -12,14 +12,19 @@ public class Executor {
 		 * constructor is private
 		 * MyClass obj=new MyClass();
 		 */
-			
-		MyClass obj=MyClass.factory();
+		//singleton
+		MyClass o1=MyClass.factory();
 		MyClass.count();
 		
 		System.out.println("Creating one more reference ....");
-		MyClass obj1=MyClass.factory();
+		MyClass o2=MyClass.factory();
 		MyClass.count();
 		
+		//not a singleton
+		MyClass m1=MyClass.getMyClass();
+		MyClass.count();
+		MyClass m2=MyClass.getMyClass();
+		MyClass.count();
 	}
 
 }
