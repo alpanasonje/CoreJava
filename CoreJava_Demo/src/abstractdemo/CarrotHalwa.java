@@ -1,5 +1,5 @@
 package abstractdemo;
-
+//
 public class CarrotHalwa extends Halwa {
 
 	public CarrotHalwa()
