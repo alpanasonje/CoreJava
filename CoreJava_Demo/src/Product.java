@@ -1,3 +1,4 @@
+import java.util.Comparator;
 
 public class Product {
 	private String productName;
@@ -66,5 +67,30 @@ public class Product {
 		return (pp.productId == this.productId);
 
 	}
+}
 
+class SortByProductName implements Comparator<Product>
+{
+	@Override
+	public int compare(Product o1, Product o2) {
+		return o1.getProductName().compareTo(o2.getProductName());
+	}
+	
+}
+
+class SortByProductId implements Comparator<Product>
+{
+	@Override
+	public int compare(Product o1, Product o2) {
+		return o1.getProductId()-o2.getProductId();
+	}
+}
+
+class SortByProductPrice implements Comparator<Product>
+{
+	@Override
+	public int compare(Product o1, Product o2) {
+		return o1.getPrice()-o2.getPrice();
+	}
+	
 }

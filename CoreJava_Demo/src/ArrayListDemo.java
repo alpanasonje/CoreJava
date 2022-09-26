@@ -1,7 +1,9 @@
 
 
 import java.util.ArrayList;
-
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class ArrayListDemo {
@@ -11,14 +13,22 @@ public class ArrayListDemo {
 		ArrayList<Integer> a1=new ArrayList<Integer>();
 		System.out.println("ArrayList is : "+a1);
 		System.out.println("size of ArrayList is : "+a1.size());
-		a1.add(10);
-		a1.add(20);
-		a1.add(30);
-		a1.add(40);
+		a1.add(130);
+		a1.add(210);
+		a1.add(310);
+		a1.add(140);
 		a1.add(50);
 		System.out.println("ArrayList is : "+a1);
 		System.out.println("size of ArrayList is : "+a1.size());
 		Iterator i1=a1.iterator();
+		while(i1.hasNext())
+		{
+			int i=(int)i1.next();
+			System.out.println(i+" "+i*i);
+		}	
+		Collections.sort(a1);
+		System.out.println("After sorting.....");
+		i1=a1.iterator();
 		while(i1.hasNext())
 		{
 			int i=(int)i1.next();
@@ -41,7 +51,16 @@ public class ArrayListDemo {
 			String str=i2.next().toString();
 			System.out.println("Length of "+str+" is "+str.length());
 		}
-		Product p=new Product("T-Shirt",12,120,101);
+		Collections.sort(a2);
+		System.out.println("After Sorting...............");
+		i2=a2.iterator();
+		while(i2.hasNext())
+		{
+			String str=i2.next().toString();
+			System.out.println("Length of "+str+" is "+str.length());
+		}
+		Collections.sort(a2);
+	/*	Product p=new Product("T-Shirt",12,120,101);
 		//a1.add(p);
 		//a1.addAll(a2);
 		System.out.println("ArrayList is : "+a1);
@@ -95,6 +114,7 @@ public class ArrayListDemo {
 		System.out.println(aa.get(123));
 		/*returns element at given index - get(index) 
 		returns boolean to check whether element is present or not - contains(element)*/
+	
 	}
 
 }
