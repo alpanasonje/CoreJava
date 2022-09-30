@@ -7,6 +7,30 @@ public class TipsForEclipse {
 
 	/* Task 1: to format this class use Ctrl + Shift + F key combination */
 
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
 	private int employeeId;
 	private String firstName;
 	private String lastName;
@@ -20,10 +44,10 @@ public class TipsForEclipse {
 	 * select the proper import which is java.time
 	 */
 
-	/*
-	 * Note:please remove the below comment before you proceed Use Ctrl + 7 to
-	 * complete this task
-	 */
+	
+//	  Note:please remove the below comment before you proceed Use Ctrl + 7 to
+//	  complete this task
+	 
 	private LocalDate dateOfJoin;
 
 	/*
@@ -35,8 +59,33 @@ public class TipsForEclipse {
 
 	private double salary;
 
-	public void printSalary() {
+	public void printSal() {
+
 		System.out.println("Salary Rs." + salary);
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public Date getD1() {
+		return d1;
+	}
+
+	public void setD1(Date d1) {
+		this.d1 = d1;
+	}
+
+	public LocalDate getDateOfJoin() {
+		return dateOfJoin;
+	}
+
+	public void setDateOfJoin(LocalDate dateOfJoin) {
+		this.dateOfJoin = dateOfJoin;
 	}
 
 	/*

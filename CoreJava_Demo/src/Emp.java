@@ -36,15 +36,20 @@ public class Emp implements Comparable<Emp>{
 		return "Emp [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + "]";
 	}
 	
-	@Override
-	public int compareTo(Emp o) {
+	/*
+	 * @Override //descending public int compareTo(Emp o) { if (empSalary >
+	 * o.empSalary) return -1; else if (empSalary < o.empSalary) return 1; else
+	 * return 0; }
+	 */
+	@Override //ascending
+	public int compareTo(Emp o)
+	{
 		if (empSalary > o.empSalary)
-			return -1;
-		else if (empSalary < o.empSalary)
 			return 1;
+		else if (empSalary < o.empSalary)
+			return -1;
 		else
 			return 0;
 	}
-	
 
 }
