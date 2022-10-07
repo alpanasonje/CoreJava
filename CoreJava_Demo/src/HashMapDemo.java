@@ -1,3 +1,4 @@
+//implementing HashMap - Key Value Pair
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -7,7 +8,7 @@ import java.util.Set;
 public class HashMapDemo {
 
 	public static void main(String[] args) {
-		HashMap<String, Double> hm=new HashMap<String, Double>();
+		Map<String, Double> hm=new HashMap<String, Double>();
 		System.out.println("HashMap : "+hm);
 		hm.put("Amit", null);
 		hm.put("Pooja", null);

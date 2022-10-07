@@ -20,7 +20,7 @@ public class TreeMapDemo {
 		hm.put("Dhruv", 89.40);
 	/*	hm.put(null, 69.75);
 		hm.put(null, 82.40);
-		hm.put(null, null);* null keysnot allowed*/
+		hm.put(null, null);* null keys not allowed*/
 		
 		System.out.println("TreeMap : "+hm);
 		Set set =hm.entrySet();
@@ -49,7 +49,7 @@ public class TreeMapDemo {
 		
 		TreeMap tm1=new TreeMap();
 		//tm1.put(new Product("T-Shirt",560,10,101),500);
-		//ClassCastException , Key - Number/String/Date/Class implements Comparable interface
+		//ClassCastException , Key - Number/String/Date Class implements Comparable interface
 		tm1.put(new Emp(101,"Amit",56000),"Sales");
 		tm1.put(new Emp(105,"Pooja",51000),"Purchase");
 		tm1.put(new Emp(102,"Sumit",46000), "Sales");

@@ -1,14 +1,13 @@
-
+//Implement LinkedList Class
 import java.util.Date;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
-import java.util.Spliterator;
 
 public class LinkedListDemo {
 
 	public static void main(String[] args) {
-		LinkedList l1 = new LinkedList(); // Empty List - Heterogeneus
+		LinkedList l1 = new LinkedList(); // Empty List - Heterogeneous
 		l1.add(10);
 		l1.add(true);
 		l1.add("java");

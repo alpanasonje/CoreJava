@@ -68,7 +68,7 @@ public class Product {
 
 	}
 }
-
+//sort by product name
 class SortByProductName implements Comparator<Product>
 {
 	@Override
@@ -78,6 +78,7 @@ class SortByProductName implements Comparator<Product>
 	
 }
 
+//sort by product id
 class SortByProductId implements Comparator<Product>
 {
 	@Override
@@ -86,6 +87,7 @@ class SortByProductId implements Comparator<Product>
 	}
 }
 
+//sort by product price
 class SortByProductPrice implements Comparator<Product>
 {
 	@Override
