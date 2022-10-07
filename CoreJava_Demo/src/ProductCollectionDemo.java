@@ -1,7 +1,11 @@
 import java.util.List;
 import java.util.Scanner;
+
+import com.capgemini.lesson22.casestudy.Candidate;
+
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 public class ProductCollectionDemo {
 
@@ -25,18 +29,24 @@ public class ProductCollectionDemo {
 		switch(n)
 		{
 		case 1:
-			Collections.sort(list1,new SortByProductName());
+			//Collections.sort(list1,new SortByProductName());
+			Comparator<Product> nameComparator = (prd1, prd2)->prd1.getProductName().compareTo(prd2.getProductName());
+			list1.stream().sorted(nameComparator).forEach(System.out::println);
 			break;
 		case 2:
-			Collections.sort(list1,new SortByProductPrice());
+			//Collections.sort(list1,new SortByProductPrice());
+			Comparator<Product> priceComparator = (prd2, prd1)->prd1.getPrice()-prd2.getPrice();
+			list1.stream().sorted(priceComparator).forEach(System.out::println);
 			break;
 		case 3:
-			Collections.sort(list1,new SortByProductId());
+			//Collections.sort(list1,new SortByProductId());
+			Comparator<Product> idComparator = (prd1, prd2)->prd1.getProductId()-prd2.getProductId();
+			list1.stream().sorted(idComparator).forEach(System.out::println);
 			break;
 		}
-		i1=list1.iterator();
-		while(i1.hasNext())
-			System.out.println(i1.next());
+		/*
+		 * i1=list1.iterator(); while(i1.hasNext()) System.out.println(i1.next());
+		 */
 	}
 
 }

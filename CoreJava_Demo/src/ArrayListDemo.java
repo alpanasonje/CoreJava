@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 
 public class ArrayListDemo {
 
 	public static void main(String[] args) {
 	//	Collection ->List ->ArrayList, LinkedList, Vector
-		ArrayList<Integer> a1=new ArrayList<Integer>();
+		ArrayList<Integer> a1=new 	ArrayList<Integer>();
 		System.out.println("ArrayList is : "+a1);
 		System.out.println("size of ArrayList is : "+a1.size());
 		a1.add(130);
@@ -19,17 +20,17 @@ public class ArrayListDemo {
 		Iterator i1=a1.iterator();
 		while(i1.hasNext())
 		{
-			int i=(int)i1.next();
+			int i=(int)i1.next();Collections.sort(a1);
 			System.out.println(i+" "+i*i);
 		}	
 		Collections.sort(a1);
-		System.out.println("After sorting.....");
-		i1=a1.iterator();
-		while(i1.hasNext())
-		{
-			int i=(int)i1.next();
-			System.out.println(i+" "+i*i);
-		}
+		System.out.println("Sorting in Ascending order....."+a1);
+		
+		//Descending order using Lambda
+		Comparator<Integer> comp = (n1, n2) -> Integer.compare(
+				n2,n1);
+		Collections.sort(a1,comp);
+		System.out.println("sorting in descending order "+a1);
 		a1.add(30);
 		a1.add(40);
 		System.out.println("ArrayList is : "+a1);

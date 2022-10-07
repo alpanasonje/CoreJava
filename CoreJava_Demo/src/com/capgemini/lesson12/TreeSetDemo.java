@@ -2,6 +2,8 @@ package com.capgemini.lesson12;
 
 import java.util.*;
 
+
+
 class TreeSetDemo {
 	public static void main(String args[]) {
 		TreeSet<String> treeSet = new TreeSet<String>(); // create a Treeset
@@ -13,12 +15,8 @@ class TreeSetDemo {
 		treeSet.add("Four");
 		treeSet.add("Five");
 
-		System.out.println("Contents of treeset");
+		System.out.println("Contents of treeset : " + treeSet);
 
-		Iterator<String> iterator = treeSet.iterator(); // obtaining iterator object
-		while (iterator.hasNext()) { // to iterate thru collection.
-			//Object object = iterator.next(); no object conversion required
-			System.out.print(iterator.next() + "\t");
-		}
+		
 	}
 }
