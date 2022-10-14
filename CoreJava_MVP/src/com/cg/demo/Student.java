@@ -1,8 +1,13 @@
 package com.cg.demo;
+
+import com.cg.accessspecifier.College;
+
 public class Student {
 
 //private, default, protected and public
-	private int rollNo;
+	//private int rollNo;
+//	int rollNo; //default - package specific
+	protected int rollNo;
 	private String name;
 	private int sub1, sub2, sub3;
 	private float per;
@@ -44,9 +49,9 @@ public class Student {
 		return per;
 	}
 
-	/*
-	 * public Student() { super(); System.out.println("Default Constructor..."); }
-	 */
+	
+	 public Student() { super(); System.out.println("Default Constructor..."); }
+	 
 	public Student(int rollNo, String name, int sub1, int sub2, int sub3) {
 		super();
 		this.rollNo = rollNo;
@@ -58,6 +63,13 @@ public class Student {
 		System.out.println("In Parameterised Constructor...");
 		
 	}
-	
+	public static void main(String args[])
+	{
+		Student student =new Student();
+		student.rollNo=10; //private member accessible
+		College college =new College();
+		//college.collegeName="MVP COE";
+		
+	}
 	
 }
