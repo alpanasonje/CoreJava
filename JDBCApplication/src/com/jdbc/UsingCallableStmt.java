@@ -13,7 +13,7 @@ public class UsingCallableStmt {
 	static CallableStatement cst;
 	
 
-	static String getName() {
+	public static String getName() {
 		
 		
 		String name="";

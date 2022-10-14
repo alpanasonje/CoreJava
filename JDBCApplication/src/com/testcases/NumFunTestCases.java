@@ -1,4 +1,4 @@
-package com.jdbc;
+package com.testcases;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertFalse;
@@ -14,40 +14,34 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import com.corejava.NumberFunctions;
+import com.jdbc.UsingCallableStmt;
 
 
 
 //@Disabled
-class MyTestCases {
+class NumFunTestCases {
 
 //	@Disabled
-	
-	@Test
-	void test() {
-	 
-		if (UsingCallableStmt.getName()==null)
-			fail("Rollno not found");
-			
-	}
-	
 	@Test
 	void test1()
 	{
 		int expected=120;
 		int actual=NumberFunctions.factorial(5);
-		
 		assertEquals(expected, actual);
-			
 	}
 	
 	@Test
 	void test2()
 	{
-		int n=NumberFunctions.isPalindrome(1221);
-		if (n==1)	
-			System.out.println("Palindrome");
-		else
-			fail("Number is not Palindrome");
+		int actual=NumberFunctions.isPalindrome(1221);
+		int expected=1;
+		assertEquals(expected,actual);		
 	}
-
+	@Test
+	void test3()
+	{
+		int actual=NumberFunctions.isPalindrome(115);
+		int expected=0;
+		assertEquals(expected,actual);		
+	}
 }
