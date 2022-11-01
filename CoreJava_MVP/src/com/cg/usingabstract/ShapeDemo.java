@@ -14,6 +14,9 @@ public class ShapeDemo {
 		s1.setSide(2.5f);
 		s1.calArea();
 		s1.show();
+		
+		
+		
 	}
 
 }

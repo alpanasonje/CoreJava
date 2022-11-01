@@ -1,9 +1,11 @@
 package client;
 
+import java.util.List;
 import java.util.Scanner;
 
 import entities.Product;
 import exceptions.ProductNotFoundException;
+import jpql.ProductJPQL;
 import service.ProductService;
 import service.ProductServiceImpl;
 
@@ -19,6 +21,7 @@ public class ProductDemo {
 			int quantity;
 			float rate;
 			Product p,p1;
+			List<Product> plist;
 			int ch;
 			do
 			{
@@ -27,7 +30,8 @@ public class ProductDemo {
 				System.out.println("2. Update Product..");
 				System.out.println("3. Remove Product..");
 				System.out.println("4. Find Product..");
-				System.out.println("5. Exit");
+				System.out.println("5. Find Product by quantity");
+				System.out.println("6. Exit");
 				System.out.println("Enter your choice....");
 				ch=sc.nextInt();
 				switch(ch)
@@ -93,10 +97,17 @@ public class ProductDemo {
 						System.out.println("Product is "+p1);
 					}
 					break;
-				case 5:System.exit(0);
+				case 5:
+					System.out.println("Enter Quantity...");
+					quantity=sc.nextInt();
+					plist=ProductJPQL.getProductsByQty(quantity);
+					for(Product pr:plist)
+						System.out.println(pr);
+					break;
+				case 6:System.exit(0);
 				}
 				
-			}while(ch!=5);
+			}while(ch!=6);
 		}
 		catch(Exception e)
 		{
