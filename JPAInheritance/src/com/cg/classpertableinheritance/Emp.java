@@ -15,6 +15,7 @@ public class Emp {
 @Id
 //@GeneratedValue(strategy=GenerationType.IDENTITY)
 private int id;
+//@Column(name="Emp_name")
 private String name;
 private double salary;
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+<bean id="airtel" class="com.cg.springioc.Airtel">
+</bean>
+
+<bean id="airtel1" class="com.cg.springioc.Airtel">
+</bean>
+
+<bean id="jio" class="com.cg.springioc.Jio"></bean>
+
+<bean id="st" class="com.cg.springioc1.Student">
+<property name="rollNo" value="10"></property>
+<property name="name" value="Amit"></property>
+<property name="certificates">
+<list>
+<value>Graduation Certificate</value>
+<value>Certificate of C Programming Course</value>
+</list>
+</property>
+</bean>
+
+<bean id="st1" class="com.cg.springioc1.Student">
+<property name="rollNo" value="20"></property>
+<property name="name" value="Nikhil"></property>
+<property name="certificates">
+<list>
+<value>Scholarship Certificate</value>
+<value>Graduation Certificate</value>
+<value>Certificate of Java Course</value>
+<value>Certificate of Python Course</value>
+</list>
+</property>
+</bean>
+</beans>
