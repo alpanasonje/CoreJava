@@ -14,6 +14,7 @@
 
 <bean id="jio" class="com.cg.springioc.Jio"></bean>
 
+
 <bean id="st" class="com.cg.springioc1.Student">
 <property name="rollNo" value="10"></property>
 <property name="name" value="Amit"></property>
@@ -37,4 +38,16 @@
 </list>
 </property>
 </bean>
+
+<bean id="st2" class="com.cg.springioc1.Student">
+<constructor-arg name="rollNo" value="30"/>
+<constructor-arg name="name" value="Pooja"/>
+<constructor-arg name="certificates">
+<list>
+<value>Graduation Certificate</value>
+</list>
+</constructor-arg>
+
+</bean>
+
 </beans>
