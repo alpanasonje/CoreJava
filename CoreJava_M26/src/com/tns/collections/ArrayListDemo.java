@@ -2,6 +2,7 @@ package com.tns.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class ArrayListDemo {
@@ -56,6 +57,18 @@ public class ArrayListDemo {
 		
 		System.out.println(names);
 		Collections.sort(names);
+		System.out.println(names);
+		
+		Iterator<String> i=names.iterator();
+		while(i.hasNext())
+		{
+			String nm=i.next();
+			System.out.print(nm+"\t");
+			if(nm.equals("Ankit"))
+				i.remove();
+		}
+		
+		System.out.println("------------------------------------");
 		System.out.println(names);
 		
 	   //User Defined Type
