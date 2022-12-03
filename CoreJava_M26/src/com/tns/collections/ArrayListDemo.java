@@ -2,6 +2,7 @@ package com.tns.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -57,7 +58,12 @@ public class ArrayListDemo {
 		
 		System.out.println(names);
 		Collections.sort(names);
-		System.out.println(names);
+		System.out.println("Sorting in Ascending order "+names);
+		
+		//Lambda Expressions
+		Comparator<String> comp = (n1, n2) -> n2.compareTo(n1);
+		Collections.sort(names,comp);
+		System.out.println("Using Lambda Expression "+names);
 		
 		Iterator<String> i=names.iterator();
 		while(i.hasNext())
@@ -82,9 +88,14 @@ public class ArrayListDemo {
 	 s1=new Student(41,"Neha",72);
 	 studentList.add(s1);
 	 System.out.println(studentList);
-		/*
-		 * studentList.add(10); Collections.sort(studentList); //CTE
-		 */
+		//studentList.add(10); 
+	 System.out.println("--------------------");
+	 Collections.sort(studentList); //CTE
+	 System.out.println(studentList);
+	 
+	 
+	 
+	
 	}
 
 }
