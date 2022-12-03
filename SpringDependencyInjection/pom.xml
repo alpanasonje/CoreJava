@@ -30,6 +30,13 @@
     <version>10.1.1</version>
 </dependency>
 
+<dependency>
+	<groupId>javax.annotation</groupId>
+	<artifactId>javax.annotation-api</artifactId>
+	<version>1.2-b04</version>
+</dependency>
+<!-- Thanks for using https://jar-download.com -->
+
  </dependencies>
   
 </project>

@@ -1,6 +1,7 @@
 package com.cg.di;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -14,6 +15,7 @@ public class EmpDeptDemo {
 		
 		Employee e2=ac.getBean("e2",Employee.class);
 		System.out.println(e2);
+		((AbstractApplicationContext) ac).close();
 		
 
 	}

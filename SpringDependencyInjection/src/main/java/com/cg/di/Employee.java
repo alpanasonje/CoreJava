@@ -1,6 +1,12 @@
 package com.cg.di;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
-public class Employee {
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+
+public class Employee implements InitializingBean, DisposableBean{
 	private int empId;
 	private String name;
 	private float salary;
@@ -47,5 +53,21 @@ public class Employee {
 		this.department=department;
 	}
 	
+//	@PostConstruct
+	/*public void init()
+	{
+		System.out.println("Employee added....");
+	}*/
 	
+//	@PreDestroy
+	public void destroy()
+	{
+		System.out.println("Employee removed....");
+	}
+	public void afterPropertiesSet() throws Exception {
+		
+		System.out.println("Employee added....");
+	}
 }
+//By Programmatic Approach
+/* Employee implements InitializingBean, DisposableBean*/
