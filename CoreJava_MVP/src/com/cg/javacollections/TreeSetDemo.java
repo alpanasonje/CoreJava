@@ -1,5 +1,7 @@
 package com.cg.javacollections;
 
+import java.util.ArrayList;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
 import exceptionex.InvalidPriceException;
@@ -26,7 +28,18 @@ public class TreeSetDemo {
 		t1.add("D");
 	//	t1.add(null); throws NullPointerException - from JDK 7 null not allowed
 		//t1.add(10);compile time error
+		
+		//BackedCollection
 		System.out.println("TreeSet : "+t1);
+		SortedSet<String> ss=t1.subSet("B", "F");
+		System.out.println("Using Subset "+ss);
+		t1.add("E");
+		System.out.println("TreeSet : "+t1);
+		System.out.println("Using Subset "+ss);
+		ss.remove("C");
+		System.out.println("TreeSet : "+t1);
+		System.out.println("Using Subset "+ss);
+		
 		
 		TreeSet<Product> t2=new TreeSet<Product>();
 		Product p1 = new Product();

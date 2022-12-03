@@ -2,6 +2,9 @@ package com.cg.javacollections;
 
 //HashMap - Unordered, Unsorted Collection
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class HashMapDemo {
 
@@ -21,7 +24,25 @@ public class HashMapDemo {
 		
 		hm.put(1000, "Pratiksha"); //replaces current value when key repeats
 		System.out.println("Employee Details "+hm);
-
+		
+		hm.put(null, null);
+		System.out.println("Employee Details "+hm);
+		
+		hm.put(101, null);
+		System.out.println("Employee Details "+hm);
+		
+		hm.put(102, null);
+		System.out.println("Employee Details "+hm);
+		
+		hm.put(null, "ABC");
+		System.out.println("Employee Details "+hm);
+		
+		Set set = hm.entrySet(); // Get a set of the entries
+		Iterator i = set.iterator(); // Get an iterator
+		while(i.hasNext()) { // Display elements
+		Map.Entry me = (Map.Entry)i.next();
+		System.out.println(me.getKey() + ": "+ me.getValue());
+		}
 	}
 
 }
