@@ -5,7 +5,7 @@ import tns.day4.package1.Base;
 
 public class Executor {
 	public static void main(String[] args) {
-		
+
 		Base b1 = new Base();
 		
 		// private, default and protected members can't access

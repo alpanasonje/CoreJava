@@ -7,18 +7,19 @@ public class Point {
 	
 	public Point() //Default Constructor
 	{
-		x=0.0f;
-		y=0.0F;
+		this.x=0.0f;
+		this.y=0.0F;
 		System.out.println("Default Constructor");
 	}
-	public Point(float v)
+	public Point(float x)
 	{
-		x=v; y=v;
+		this.x=x; this.y=x;
 	}
-	public Point(float x1,float y1)
+	public Point(float x,float y)//Parameterized Constructor
 	{
-		x=x1;
-		y=y1;
+		this();
+		this.x=x;
+		this.y=y;
 	}
 	public void show()
 	{
