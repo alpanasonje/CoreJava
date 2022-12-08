@@ -1,6 +1,8 @@
 package com.cg.javacollections;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -63,6 +65,19 @@ public class TreeSetDemo {
 		p1.setName("Pen");
 		t2.add(p1);
 		System.out.println("Treeset "+t2);
+		
+		//Example of Comparator
+		
+				TreeSet<Emp> a4=new TreeSet<Emp>(new SortByEmpName());
+				a4.add(new Emp(1001,"Sarvesh",67000));
+				a4.add(new Emp(1004,"Nilesh",87000));
+				a4.add(new Emp(1008,"Mahesh",72000));
+				a4.add(new Emp(1002,"Devesh",55000));
+				System.out.println("Employee Details \n"+a4);
+				//Collections.sort(a4, new SortByEmpId());
+				//Collections.sort(a4,new SortByEmpName());
+			//	Collections.sort(a4,new SortByEmpSalary());
+			//	System.out.println("Employee Details After Sorting\n"+a4);
 		
 		
 	}

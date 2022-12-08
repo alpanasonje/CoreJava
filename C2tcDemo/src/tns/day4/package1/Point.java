@@ -5,6 +5,7 @@ public class Point {
 	private float x;
 	private float y;
 	
+	//Constructor Overloading
 	public Point() //Default Constructor
 	{
 		this.x=0.0f;
