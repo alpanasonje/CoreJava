@@ -12,12 +12,17 @@ public class WithdrawThread extends Thread{
 	public void run() {
 		 try {
 			 Thread.sleep(2000);
+			
+			 a1.withdraw(amt);
+			 System.out.println("Withdraw Successful...");
+	
 		 }
 
 catch(Exception e)
 		 {
 			 System.out.println(e);
 		 }
-		a1.withdraw(amt);
+		 
+		
 	}	
 }

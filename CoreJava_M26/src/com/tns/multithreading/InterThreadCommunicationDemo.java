@@ -10,11 +10,10 @@ public class InterThreadCommunicationDemo {
 		p1.start();
 		c1.start();
 		
-		try {
-			p1.join();
-			c1.join();
-		} catch (InterruptedException e) {
-			System.out.println(e);
-		}
+		
+		  try { p1.join(); c1.join(); } catch (InterruptedException e) {
+		  System.out.println(e); }
+		 
+		System.out.println("----------------------------------------------");
 	}
 }

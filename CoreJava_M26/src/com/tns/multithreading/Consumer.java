@@ -11,11 +11,11 @@ public class Consumer extends Thread {
 public void run()
 {
 	  int i=0;
-	  while(true)
+	  for(int j=0;j<10;j++)
 	  {
 		  try
 		  {
-			  Thread.sleep(3000);
+			  Thread.sleep(300);
 		  }
 		  catch(Exception e)
 		  {
