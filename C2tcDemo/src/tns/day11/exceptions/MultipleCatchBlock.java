@@ -16,14 +16,13 @@ public class MultipleCatchBlock {
 			c = a / b;
 			System.out.println("Division is " + c);
 			System.out.println(arr[2]);
-		}
+		
+		}catch (ArithmeticException e|InputMismatchException e |ArrayIndexOutOfBoundsException e) {
+			System.out.println("Error Occurred.." + e.getMessage());
+		
+		} 
 		catch (Exception e) {
 			System.out.println("Error Occurred.." + e.getMessage());
-		}catch (ArithmeticException e) {
-			System.out.println("Error Occurred.." + e.getMessage());
-		} catch (InputMismatchException e) {
-			System.out.println("Invalid Input " + e);
-		} 
 	}
 
 	public static void main(String[] args) {
