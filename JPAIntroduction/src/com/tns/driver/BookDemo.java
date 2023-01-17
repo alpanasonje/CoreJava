@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import com.tns.jpaentity.Book;
+import com.tns.jpaentity.Book1;
 
 public class BookDemo {
 
@@ -19,7 +19,7 @@ public class BookDemo {
 				
 				em.getTransaction().begin();
 				
-				Book b1=new Book();
+				Book1 b1=new Book1();
 				b1.setBookId(102);
 				b1.setTitle("Java Complete Reference");
 				b1.setAuthor("Herbert Schild");

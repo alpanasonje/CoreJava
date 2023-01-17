@@ -1,9 +1,13 @@
-package com.tns.jpaentity;
+package com.tns.jpql;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQueries(@NamedQuery(name="getAllBooks", query="SELECT book FROM\r\n"
+		+ "Book book"))
 public class Book {
 	@Id
 	private int bookId;
