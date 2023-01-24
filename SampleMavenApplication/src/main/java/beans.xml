@@ -27,17 +27,29 @@ class="com.tns.helloworldioc.HelloWorld">
 <property name="contactNo">
 <list>
 <value>9847776644</value>
-<value>8976632234</value>
+<value>9848886644</value>
 </list>
 </property>
 </bean>
 
-<bean id="dept1" class="com.tns.autowire.Department">
+<bean id="p2" class="com.tns.personioc.Person">
+<property name="id" value="102"></property>
+<property name="name" value="Pratik"></property>
+<property name="contactNo">
+<set>
+<value>7647776644</value>
+<value>7648886644</value>
+</set>
+</property>
+</bean>
+
+
+<bean id="dept" class="com.tns.autowire.Department">
 <property name="deptNo" value="10"></property>
 <property name="deptName" value="Account"></property>
 </bean>
 
-<bean id="dept" class="com.tns.autowire.Department">
+<bean id="dept1" class="com.tns.autowire.Department">
 <property name="deptNo" value="20"></property>
 <property name="deptName" value="IT"></property>
 </bean>

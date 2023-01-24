@@ -10,6 +10,9 @@ public class PersonAddressDemo {
 		ApplicationContext c = new ClassPathXmlApplicationContext("bean1.xml");
 		Person person=c.getBean("person", Person.class);
 		System.out.println(person);
+		
+		person=c.getBean("person1", Person.class);
+		System.out.println(person);
 	}
 
 }

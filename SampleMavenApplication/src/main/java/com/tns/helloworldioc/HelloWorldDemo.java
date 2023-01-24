@@ -16,7 +16,7 @@ public class HelloWorldDemo {
 				HelloWorld bean=(HelloWorld)c.getBean("hwObject1");
 				bean.sayHello("Amit");
 				
-				HelloWorld bean1=(HelloWorld)c.getBean("hwObject");
+				HelloWorld bean1=c.getBean("hwObject",HelloWorld.class);
 				bean1.sayHello("Amol");
 				
 				
