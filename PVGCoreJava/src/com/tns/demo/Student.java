@@ -1,5 +1,6 @@
 package com.tns.demo;
 
+//final public class Student - final classes can't be inherited
 public class Student {
 	
 	private int id; //private member
