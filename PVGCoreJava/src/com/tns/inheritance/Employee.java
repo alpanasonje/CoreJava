@@ -40,11 +40,11 @@ public class Employee extends Person {
 				+ "]";
 	}
 	
-	@Override
-	public void show()
+	//@Override
+	public  void show()
 	{
 		System.out.println("In Employee show()");
-		super.show();
+		//super.show();
 	}
 
 }

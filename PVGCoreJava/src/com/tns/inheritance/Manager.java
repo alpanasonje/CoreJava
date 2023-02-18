@@ -39,7 +39,7 @@ public class Manager extends Employee{
 	public void show()
 	{
 		System.out.println("In Manager show()");
-		super.show();
+		//super.show();
 	}
 	
 
