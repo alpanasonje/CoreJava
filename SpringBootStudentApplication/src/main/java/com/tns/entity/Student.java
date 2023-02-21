@@ -6,7 +6,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name="tstudent")
@@ -16,6 +19,24 @@ public class Student {
 	private Integer rollno;
 	private String name;
 	private Float per;
+	
+	@ManyToOne()
+	@JoinColumn(name="collegeid", referencedColumnName = "id")
+	private College college;
+	
+	public Student(College college)
+	{
+		this.college=college;
+	}
+	
+	
+	public College getCollege() {
+		return college;
+	}
+
+	public void setCollege(College college) {
+		this.college = college;
+	}
 
 	private Student() {
 		super();
