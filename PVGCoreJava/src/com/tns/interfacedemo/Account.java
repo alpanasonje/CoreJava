@@ -5,7 +5,6 @@ public class Account implements Bank {
 	private String name;
 	private float balance;
 	
-	
 	public Account() {
 		super();
 		// TODO Auto-generated constructor stub
