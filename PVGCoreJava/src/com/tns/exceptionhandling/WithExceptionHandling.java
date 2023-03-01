@@ -15,24 +15,21 @@ public class WithExceptionHandling {
 	}
 
 	public static void main(String[] args) {
-		
-		System.out.println("Division is " + intDivision(10, 3));
-		System.out.println("Division is " + division(10, 3));
-		System.out.println("Division is " + floatDivision(10, 3));
+		try {
+			System.out.println("Division is " + intDivision(10, 3));
+			System.out.println("Division is " + division(10, 3));
+			System.out.println("Division is " + floatDivision(10, 3));
 
-		System.out.println("Division is " + intDivision(10, 200));
-		System.out.println("Division is " + division(10, 200));
-		System.out.println("Division is " + floatDivision(10, 200));
+			System.out.println("Division is " + intDivision(10, 200));
+			System.out.println("Division is " + division(10, 200));
+			System.out.println("Division is " + floatDivision(10, 200));
 
-		System.out.println("Division is " + division(10, 0));
-		try
-		{
-		System.out.println("Division is " + floatDivision(10, 0));
-		System.out.println("Division is " + intDivision(10, 0));
-		}
-		catch(Exception e)
-		{
-			System.err.println("Error Occurred..."+e.getMessage());
+			System.out.println("Division is " + division(10, 0));
+
+			System.out.println("Division is " + floatDivision(10, 0));
+			System.out.println("Division is " + intDivision(10, 0));
+		} catch (Exception e) {
+			System.err.println("Error Occurred..." + e.getMessage());
 		}
 		System.out.println("------------------------------------------");
 	}
