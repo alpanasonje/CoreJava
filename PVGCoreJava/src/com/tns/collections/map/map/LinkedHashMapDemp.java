@@ -1,4 +1,4 @@
-//Program to demonstrate LinkedHashMap
+/*Program to demonstrate LinkedHashMap*/
 package com.tns.collections.map.map;
 
 import java.util.LinkedHashMap;

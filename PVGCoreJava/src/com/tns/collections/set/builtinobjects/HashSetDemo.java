@@ -1,4 +1,4 @@
-	//Program to demonstrate HashSet Collection
+/*Program to demonstrate HashSet Collection*/
 package com.tns.collections.set.builtinobjects;
 import java.util.HashSet;
 import java.util.Spliterator;

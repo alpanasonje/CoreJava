@@ -1,4 +1,4 @@
-//Program to demonstrate LinkedHashSet Collection
+/*Program to demonstrate LinkedHashSet Collection*/
 package com.tns.collections.set.builtinobjects;
 
 import java.util.ArrayList;

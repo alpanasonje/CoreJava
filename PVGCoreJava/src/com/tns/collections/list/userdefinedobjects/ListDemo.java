@@ -1,4 +1,4 @@
-//Program to demonstrate List collection for user defined objects
+/*Program to demonstrate List collection for user defined objects*/
 package com.tns.collections.list.userdefinedobjects;
 import java.util.ArrayList;
 import java.util.Collections;

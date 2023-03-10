@@ -1,4 +1,4 @@
-//Program to demonstrate List collection for user defined objects and 
+/*Program to demonstrate List collection for user defined objects and*/ 
 //sort elements using comparable and comparator
 package com.tns.collections.list.userdefinedobjects.comparableandcomparator;
 

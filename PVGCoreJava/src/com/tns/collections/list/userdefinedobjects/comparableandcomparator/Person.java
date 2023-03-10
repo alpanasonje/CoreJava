@@ -1,4 +1,4 @@
-//Program to demonstrate Person entity using Comparator interface
+/*Program to demonstrate Person entity using Comparator interface*/
 package com.tns.collections.list.userdefinedobjects.comparableandcomparator;
 
 import java.util.Comparator;

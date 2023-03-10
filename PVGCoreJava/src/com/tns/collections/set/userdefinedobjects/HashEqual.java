@@ -1,4 +1,4 @@
-//equals and hashcode methods
+/*equals and hashcode methods*/
 package com.tns.collections.set.userdefinedobjects;
 
 public class HashEqual {

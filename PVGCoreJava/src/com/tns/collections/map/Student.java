@@ -1,4 +1,4 @@
-//Program to demonstrate Student entity  
+/*Program to demonstrate Student entity*/  
 
 package com.tns.collections.map;
 

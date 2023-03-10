@@ -1,5 +1,5 @@
-//Java program to demonstrate working of ConcurrentHashMap
-package com.tnsif.dayeighteen.map;
+/*Java program to demonstrate working of ConcurrentHashMap*/
+package com.tns.collections.map.map;
 
 import java.util.concurrent.*;
 

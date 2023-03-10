@@ -1,4 +1,4 @@
-//Program to demonstrate Hashtable
+/*Program to demonstrate Hashtable*/
 package com.tns.collections.map.map;
 
 import java.util.Enumeration;

@@ -1,4 +1,4 @@
-//Program to demonstrate TreeSet class
+/*Program to demonstrate TreeSet class*/
 package com.tns.collections.map;
 
 import java.util.Set;

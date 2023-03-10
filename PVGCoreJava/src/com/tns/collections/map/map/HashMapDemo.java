@@ -1,4 +1,4 @@
-//Program to demonstrate HashMap class
+/*Program to demonstrate HashMap class*/
 package com.tns.collections.map.map;
 import java.util.*;
 

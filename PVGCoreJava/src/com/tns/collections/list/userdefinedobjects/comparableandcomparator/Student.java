@@ -1,4 +1,4 @@
-//Program to demonstrate Student entity using Comparable interface
+/*Program to demonstrate Student entity using Comparable interface*/
 package com.tns.collections.list.userdefinedobjects.comparableandcomparator;
 
 public class Student implements Comparable<Student>  {

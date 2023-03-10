@@ -1,4 +1,4 @@
-//Program to demonstrate HashSet using user defined objects
+/*Program to demonstrate HashSet using user defined objects*/
 package com.tns.collections.set.userdefinedobjects;
 
 import java.util.HashSet;
